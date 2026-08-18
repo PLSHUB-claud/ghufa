@@ -638,28 +638,34 @@ button{ cursor:pointer; }
 
 .goth-vol-console {
   position: absolute;
-  left: 62.4%;
+  left: 61.5%;
   top: 77.2%;
-  width: 19.4%;
+  width: 24.5%;
   height: 10.0%;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   z-index: 16;
   user-select: none;
 }
 
 .goth-btn-speaker {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  flex-shrink: 0;
   background: transparent;
   border: 0;
   padding: 0;
-  width: 22px;
+  width: 20px;
   height: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   outline: none;
   transition: transform 0.1s ease;
+  z-index: 3;
 }
 
 .goth-btn-speaker:active {
@@ -668,6 +674,7 @@ button{ cursor:pointer; }
 
 .goth-speaker-icon {
   font-size: 13px;
+  line-height: 1;
   filter: drop-shadow(0 0 3px #000) drop-shadow(0 0 6px rgba(255, 40, 40, 0.6));
   opacity: 0.92;
   transition: opacity 0.15s ease, filter 0.15s ease;
