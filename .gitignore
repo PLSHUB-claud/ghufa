@@ -4,5 +4,8 @@ cloudflared.exe
 __pycache__/
 *.pyc
 *.zip
+GPT report/
+node_modules/
 
 app.source.js
+

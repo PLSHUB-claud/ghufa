@@ -311,9 +311,7 @@ button{ cursor:pointer; }
   background:rgba(0,0,0,.52);
 }
 
-/* =========================================================
-   GOTHIC MEDIA PLAYER COMPONENT - SEAMLESS INTEGRATION
-   ========================================================= */
+
 .goth-player-section {
   position: relative;
   display: flex;
@@ -348,7 +346,7 @@ button{ cursor:pointer; }
 .goth-player-inner {
   position: relative;
   width: 100%;
-  padding-bottom: 66.6667%; /* Exact 1536x1024 ratio (3:2) */
+  padding-bottom: 66.6667%; 
   overflow: hidden;
   background: transparent;
   border-radius: 2px;
@@ -375,7 +373,7 @@ button{ cursor:pointer; }
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.95)) brightness(1.2) contrast(1.15);
 }
 
-/* Central Screen */
+
 .goth-player-screen {
   position: absolute;
   left: 20.05%;
@@ -527,7 +525,7 @@ button{ cursor:pointer; }
   margin-top: 2px;
 }
 
-/* Integrated Seek Bar */
+
 .goth-seek-bar-wrap {
   position: absolute;
   top: 75.6%;
@@ -572,7 +570,7 @@ button{ cursor:pointer; }
   margin: 0;
 }
 
-/* Interactive Buttons */
+
 .goth-btn {
   position: absolute;
   background: transparent;
@@ -637,7 +635,7 @@ button{ cursor:pointer; }
   border-radius: 3px;
 }
 
-/* Direct Integrated Volume Console (Directly on Red Console Bar) */
+
 .goth-vol-console {
   position: absolute;
   left: 62.4%;
@@ -750,7 +748,7 @@ button{ cursor:pointer; }
 
 .goth-btn-load input { display: none; }
 
-/* Playlist Drawer Modal */
+
 .goth-playlist-drawer {
   position: absolute;
   inset: 12% 16% 16% 16%;
@@ -849,9 +847,7 @@ button{ cursor:pointer; }
   color: #fff;
 }
 
-/* =========================================================
-   WINDOWS NOTEPAD 'ABOUT YOU' WIDGET
-   ========================================================= */
+
 .win-notepad-window {
   position: relative;
   width: 100%;
@@ -1157,9 +1153,7 @@ button{ cursor:pointer; }
   align-content:start;
 }
 
-/* =========================================================
-   MUSIC TAB - SOLID RETRO TRACKLIST
-   ========================================================= */
+
 #tab-music.active {
   padding: 24px;
 }

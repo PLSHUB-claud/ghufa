@@ -51,7 +51,7 @@ def _safe_url_path(url_path: str):
 
 
 class SecureHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
-    server_version = "GhufaStatic"
+    server_version = ""
     sys_version = ""
 
     def __init__(self, *args, **kwargs):
