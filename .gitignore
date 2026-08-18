@@ -3,5 +3,6 @@ cloudflared.exe
 .system_generated/
 __pycache__/
 *.pyc
+*.zip
 
 app.source.js
