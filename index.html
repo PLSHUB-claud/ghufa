@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GHUFA // PROFILES</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="assets/background.mp4" type="video/mp4">
+  </video>
+  <div class="page-blood top"></div>
+  <div class="page-blood left"></div>
+  <div class="page-blood right"></div>
+  <div class="screen-noise"></div>
+  <div class="vignette"></div>
+
+  <div class="site-wrap">
+    <header class="top-shell">
+      <div class="top-banner">
+        <div class="brand">GHUFA</div>
+        <div class="micro-nav">
+          <a href="#lobby" data-tab-link="lobby">Lobby</a> |
+          <a href="#profiles" data-tab-link="profiles">Profiles</a> |
+          <a href="#music" data-tab-link="music">Music</a> |
+          <a href="https://discord.gg/uHMcazd2qA" target="_blank" rel="noreferrer">Server</a>
+        </div>
+      </div>
+
+      <nav class="nav-strip">
+        <button class="nav-tab active" data-tab="lobby">LOBBY</button>
+        <button class="nav-tab" data-tab="profiles">PROFILES</button>
+        <button class="nav-tab" data-tab="music">MUSIC</button>
+      </nav>
+    </header>
+
+    <main class="site">
+      
+      <section class="tab-panel active" id="tab-lobby">
+        <div class="lobby-shell">
+          <div class="panel-head">LOBBY // GHUFA</div>
+
+          <div class="lobby-grid">
+            <div class="lobby-left">
+              <div class="gif-wall">
+                <div class="gif-slot">
+                  <img src="assets/slot_top_left.gif" alt="Animated Visual">
+                </div>
+
+                <div class="gif-slot tall">
+                  <img src="assets/goth_sigils_tall.jpg" alt="Gothic Sigil Archive">
+                </div>
+
+                <div class="gif-slot wide">
+                  <img src="assets/you_died.png" alt="YOU DIED">
+                </div>
+
+                <div class="gif-slot square">
+                  <img src="assets/goth_anime.png" alt="Artwork">
+                </div>
+              </div>
+            </div>
+
+            <aside class="goth-player-section">
+              <div class="goth-player-wrap" id="gothPlayer">
+                <div class="goth-player-inner">
+                  <!-- Gothic Frame Image -->
+                  <img class="goth-player-bg" src="assets/player_frame.png" alt="Gothic Media Player">
+                  <!-- Pixel-aligned Flower Blood Drips -->
+                  <img class="goth-player-drips-top" src="assets/blood_drip_topright_exact.png" alt="">
+
+                  <!-- Screen in the center -->
+                  <div class="goth-player-screen" id="gothScreen">
+                    <img class="goth-screen-cover" id="gothCover" src="assets/profile_doll.png" alt="Cover Art">
+                    <div class="goth-screen-scanlines"></div>
+                    <div class="goth-screen-glitch" id="gothGlitch"></div>
+                    
+                    <!-- Dynamic Visualizer Bars -->
+                    <div class="goth-screen-visualizer" id="gothVisualizer">
+                      <span class="v-bar" style="--i:1"></span>
+                      <span class="v-bar" style="--i:2"></span>
+                      <span class="v-bar" style="--i:3"></span>
+                      <span class="v-bar" style="--i:4"></span>
+                      <span class="v-bar" style="--i:5"></span>
+                      <span class="v-bar" style="--i:6"></span>
+                      <span class="v-bar" style="--i:7"></span>
+                      <span class="v-bar" style="--i:8"></span>
+                      <span class="v-bar" style="--i:9"></span>
+                      <span class="v-bar" style="--i:10"></span>
+                      <span class="v-bar" style="--i:11"></span>
+                      <span class="v-bar" style="--i:12"></span>
+                      <span class="v-bar" style="--i:13"></span>
+                      <span class="v-bar" style="--i:14"></span>
+                    </div>
+
+                    <!-- Screen HUD Overlay -->
+                    <div class="goth-screen-hud">
+                      <div class="goth-hud-top">
+                        <span class="goth-hud-badge" id="gothHudStatus">PAUSED</span>
+                        <span class="goth-hud-time" id="gothHudTime">00:00 / 00:00</span>
+                      </div>
+                      <div class="goth-hud-bottom">
+                        <div class="goth-hud-title" id="gothHudTitle">TRACK 01 // ROTTING ANGEL</div>
+                        <div class="goth-hud-sub" id="gothHudSub">LOCAL AUDIO ARCHIVE // GHUFA</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Integrated Seek Bar -->
+                  <div class="goth-seek-bar-wrap">
+                    <div class="goth-seek-track" id="gothSeekTrack">
+                      <div class="goth-seek-progress" id="gothSeekProgress"></div>
+                      <input type="range" class="goth-seek-slider" id="gothSeek" min="0" max="100" value="0" step="0.1" title="Seek track">
+                    </div>
+                  </div>
+
+                  <!-- Control Buttons Hotspots -->
+                  <button type="button" class="goth-btn goth-btn-prev" id="gothPrev" title="Previous Track (|<<)"></button>
+                  <button type="button" class="goth-btn goth-btn-play" id="gothPlay" title="Play / Pause">
+                    <span class="goth-play-glow"></span>
+                    <span class="goth-play-icon" id="gothPlayIcon"></span>
+                  </button>
+                  <button type="button" class="goth-btn goth-btn-next" id="gothNext" title="Next Track (>>|)"></button>
+
+                  <!-- Integrated Control Console Volume Slider -->
+                  <div class="goth-vol-console" id="gothVolConsole">
+                    <button type="button" class="goth-btn goth-btn-speaker" id="gothSpeakerBtn" title="Mute / Unmute">
+                      <span class="goth-speaker-icon" id="gothSpeakerIcon">🔊</span>
+                    </button>
+                    <div class="goth-vol-track" id="gothVolTrack" title="Drag or click to adjust volume">
+                      <div class="goth-vol-fill" id="gothVolFill"></div>
+                      <div class="goth-vol-handle" id="gothVolHandle"></div>
+                    </div>
+                  </div>
+
+                  <!-- Playlist Drawer Toggle Hotspot (top right icon) -->
+                  <button type="button" class="goth-btn goth-btn-menu" id="gothTracklistBtn" title="Toggle Playlist / Tracklist"></button>
+
+                  <!-- File Loader Hotspot (bottom right icon) -->
+                  <label class="goth-btn goth-btn-load" id="gothLoadBtn" title="Load Audio File">
+                    <input id="gothAudioFile" type="file" accept="audio/*">
+                  </label>
+
+                  <!-- Playlist Overlay Drawer -->
+                  <div class="goth-playlist-drawer" id="gothPlaylistDrawer">
+                    <div class="goth-drawer-head">
+                      <span>AUDIO ARCHIVE // TRACKS</span>
+                      <button type="button" class="goth-drawer-close" id="gothDrawerClose">&times;</button>
+                    </div>
+                    <div class="goth-drawer-list" id="gothDrawerList"></div>
+                    <label class="goth-drawer-upload">
+                      <span>[+] LOAD CUSTOM MP3</span>
+                      <input id="gothDrawerUpload" type="file" accept="audio/*">
+                    </label>
+                  </div>
+                </div>
+                <div class="goth-blood-drip-bottom"></div>
+              </div>
+
+              <!-- Windows Notepad 'About You' Widget -->
+              <div class="win-notepad-window" id="aboutYouNotepad">
+                <div class="win-title-bar">
+                  <div class="win-title-text">
+                    <span class="win-notepad-icon">🖹</span>
+                    <span>About You - Notepad</span>
+                  </div>
+                  <div class="win-title-controls">
+                    <button type="button" class="win-btn-box" aria-label="Minimize">_</button>
+                    <button type="button" class="win-btn-box" aria-label="Maximize">□</button>
+                    <button type="button" class="win-btn-box" aria-label="Close">✕</button>
+                  </div>
+                </div>
+                <div class="win-menu-bar">
+                  <span><u>F</u>ile</span>
+                  <span><u>E</u>dit</span>
+                  <span><u>S</u>earch</span>
+                  <span><u>H</u>elp</span>
+                </div>
+                <div class="win-notepad-body">
+                  <div class="win-notepad-content">
+                    <div class="about-line"><span class="lbl">IP Address:</span> <span class="val" id="aboutIp">179.126.167.235</span></div>
+                    <div class="about-line"><span class="lbl">Browser:</span> <span class="val" id="aboutBrowser">Mozilla/5.0</span></div>
+                    <div class="about-line"><span class="lbl">Browser Language:</span> <span class="val" id="aboutLang">pt-BR</span></div>
+                    <div class="about-line"><span class="lbl">Screen Resolution:</span> <span class="val" id="aboutScreen">1920x1080</span></div>
+                    <div class="about-line"><span class="lbl">Color Depth:</span> <span class="val" id="aboutColor">24-bit</span></div>
+                    <div class="about-line"><span class="lbl">Operating System:</span> <span class="val" id="aboutOs">Win32</span></div>
+                    <div class="about-line"><span class="lbl">Device Memory:</span> <span class="val" id="aboutMemory">32 GB</span></div>
+                    <div class="about-line"><span class="lbl">CPU Cores:</span> <span class="val" id="aboutCores">6</span></div>
+                    <div class="about-line"><span class="lbl">Connection Type:</span> <span class="val" id="aboutConn">4g</span></div>
+                    <div class="about-line"><span class="lbl">Cookies Enabled:</span> <span class="val" id="aboutCookies">Yes</span></div>
+                    <div class="about-line"><span class="lbl">Do Not Track:</span> <span class="val" id="aboutDnt">Disabled</span></div>
+                    <div class="about-line"><span class="lbl">Timezone:</span> <span class="val" id="aboutTz">America/Sao_Paulo</span></div>
+                    <div class="about-line"><span class="lbl">Window Size:</span> <span class="val" id="aboutWinSize">1920x919</span></div>
+                    <div class="about-line"><span class="lbl">Local Time:</span> <span class="val" id="aboutTime">--/--/----, --:--:--</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <audio id="lobbyAudio" preload="metadata"></audio>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+<section class="tab-panel profiles-layout" id="tab-profiles">
+        <div class="left-panel">
+          <div class="panel-head">PROFILE DIRECTORY // GHUFA</div>
+
+          <div class="hero-card">
+            <div class="sigil-wrap profile-photo-wrap">
+              <img class="profile-photo" src="assets/profile_doll.png" alt="ghufa">
+            </div>
+
+            <div class="hero-copy">
+              <h1>@ghufa</h1>
+              <p>antes eu temia a escuridao, hoje bato punheta nela, ghufa 2025</p>
+            </div>
+          </div>
+
+          <div class="old-table">
+            <div class="old-row">
+              <div class="label">DISCORD</div>
+              <div class="value">@ghufa</div>
+              <button class="copy-btn" data-copy="@ghufa">copy</button>
+            </div>
+
+            <div class="old-row">
+              <div class="label">DISCORD SERVER</div>
+              <div class="value"><a href="https://discord.gg/uHMcazd2qA" target="_blank" rel="noreferrer">discord.gg/uHMcazd2qA</a></div>
+              <a class="go-btn" href="https://discord.gg/uHMcazd2qA" target="_blank" rel="noreferrer">enter</a>
+            </div>
+
+            <div class="old-row">
+              <div class="label">STEAM MAIN</div>
+              <div class="value break"><a href="https://steamcommunity.com/profiles/76561199032588685/" target="_blank" rel="noreferrer">steamcommunity.com/profiles/76561199032588685/</a></div>
+              <a class="go-btn" href="https://steamcommunity.com/profiles/76561199032588685/" target="_blank" rel="noreferrer">view</a>
+            </div>
+
+            <div class="old-row">
+              <div class="label">STEAM SECONDARY</div>
+              <div class="value break"><a href="https://steamcommunity.com/profiles/76561198780359919" target="_blank" rel="noreferrer">steamcommunity.com/profiles/76561198780359919</a></div>
+              <a class="go-btn" href="https://steamcommunity.com/profiles/76561198780359919" target="_blank" rel="noreferrer">view</a>
+            </div>
+          </div>
+
+          <div class="warning-strip">
+            LAST UPDATE: 06:66:66<br>
+            DO NOT HOTLINK / DO NOT MIRROR / DO NOT TRUST THE WHITE SPACE
+          </div>
+        </div>
+
+        <aside class="right-panel">
+          <div class="side-box">
+            <div class="side-title">status</div>
+            <p>online: maybe</p>
+            <p>location: null</p>
+            <p>mood: corrupted</p>
+            <p>contact: discord only</p>
+          </div>
+
+          <div class="side-box warning-box">
+            <div class="side-title">warning</div>
+            <p>you reached a page that was not indexed correctly.</p>
+            <p>refreshing will not fix it.</p>
+          </div>
+
+          <div class="side-box warning-box disclaimer-box">
+            <div class="side-title">warning // disclaimer</div>
+            <p>Todo o conteúdo visual desta página é fictício e artístico, inspirado exclusivamente na estética gorecore. Nenhuma imagem representa atos reais ou incentiva violência, crimes ou qualquer prática ilegal. É apenas expressão artística — não sou doente nem paneleiro!</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="tab-panel" id="tab-music">
+        <div class="music-shell">
+          <div class="panel-head">AUDIO ARCHIVE // FULL DISCOGRAPHY (37 TRACKS)</div>
+
+          <div class="music-tracklist-wrap">
+            <div class="music-tracklist-banner">
+              <span>SELECT ANY TRACK TO PLAY</span>
+              <span class="music-help-sub">CONTROLS LOCATED IN LOBBY</span>
+            </div>
+
+            <div class="music-table-header">
+              <span class="mth-num">#</span>
+              <span class="mth-title">TRACK TITLE</span>
+              <span class="mth-artist">ARTIST</span>
+            </div>
+
+            <div class="music-tracklist-rows" id="musicTrackList"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
